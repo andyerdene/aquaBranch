@@ -1,1 +1,1 @@
-console.log("hello");
+let myMain = document.getElementById("main");
