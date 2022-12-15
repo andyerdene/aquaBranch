@@ -1,3 +1,25 @@
+* {
+  box-sizing: border-box;
+}
 body {
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+  width: 23%;
+  height: 200px;
   background-color: aqua;
+  margin: 5px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul li div {
+  width: 100%;
+}
+#Batsukh {
+  background-color: aquamarine;
 }
