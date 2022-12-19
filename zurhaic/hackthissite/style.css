@@ -1,0 +1,13 @@
+body {
+  background-image: url(./img/209037.gif);
+}
+main {
+  background-color: rgba(255, 255, 255, 0.505);
+}
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+h1 {
+  color: whitesmoke;
+}
