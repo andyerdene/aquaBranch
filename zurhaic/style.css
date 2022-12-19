@@ -1,0 +1,17 @@
+body {
+    background-color: aqua;
+}
+
+.play {
+    text-decoration: none;
+}
+
+.img {
+    height: 80vh;
+    width: 20%;
+}
+.img:first-child{
+    background-image: url(./image/aquqman.webp);
+    background-position: center;
+    background-size: cover, 20%;
+}
