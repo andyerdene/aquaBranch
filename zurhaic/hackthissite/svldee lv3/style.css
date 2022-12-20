@@ -1,0 +1,22 @@
+body {
+  background-color: aqua;
+  display: block;
+  width: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+input {
+  width: 300px;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+button {
+  border-radius: 6px;
+  font-size: 15px;
+}
+#password {
+  color: aqua;
+  margin-top: 500px;
+}
