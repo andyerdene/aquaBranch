@@ -1,3 +1,9 @@
+window.addEventListener("Ready", event => {
+    const audio = document.querySelector("audio");
+    audio.volume = 0.5;
+    audio.play();
+  });
+
 function logIn() {
     checkUsername();
     checkPassword();
@@ -92,8 +98,3 @@ function openNextPage(){
 }
 
 
-window.addEventListener("DOMContentLoaded", event => {
-    const audio = document.querySelector("audio");
-    audio.volume = 0.5;
-    audio.play();
-  });
