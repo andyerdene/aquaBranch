@@ -1,0 +1,104 @@
+body {
+  background-color: black;
+}
+
+.gif1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.gif1 img {
+  height: 200px;
+}
+
+.gif2 {
+  display: flex;
+  justify-content: center;
+}
+
+.gif2 img {
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: rgb(255, 200, 0);
+  width: 500px;
+  height: 120px;
+  margin-bottom: 200px;
+}
+
+.title h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mainSec {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  width: 300px;
+  height: 20px;
+  background-color: rgb(75, 75, 75);
+  color: white;
+  margin-bottom: 15px;
+}
+
+.textPass2 {
+  color: white;
+  font-size: larger;
+}
+
+.textPass1 {
+  color: rgb(58, 58, 253);
+  font-size: larger;
+}
+
+#myBttn {
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  background-color: aqua;
+  color: black;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.op {
+  display: none;
+}
+
+.bu {
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+  padding-right: 500px;
+}
+
+#button1 {
+  width: 80px;
+  height: 30px;
+  border-radius: 7px;
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+  display: none;
+}
