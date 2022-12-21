@@ -75,22 +75,5 @@ form h3 {
   background: #45933e;
   cursor: pointer;
   transition: 0.5s;
-  width: 30%;
-}
-.input-box.button input:hover {
-  background: linear-gradient(45deg, #b5bac5, #0e4bf1);
-  box-shadow: 2px 2px 2px #16441a;
-  transition: 0.5s;
-}
-form .text h3 {
-  color: #333;
-  width: 100%;
-  text-align: center;
-}
-form .text h3 a {
-  color: #4070f4;
-  text-decoration: none;
-}
-form .text h3 a:hover {
-  text-decoration: underline;
+  width: 40%;
 }
