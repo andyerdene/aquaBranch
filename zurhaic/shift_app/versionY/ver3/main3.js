@@ -34,31 +34,30 @@ function genArray() {
     sumScore.style.display = 'block';
 
     // tasks and answers setup
-    let task1 = 'array.pop();';
-    array.pop();
+    let task1 = 'array.reverseSort("students")';
+    array.sort((a, b) => b - a);
     let answer1 = `Answer:\n[${array}];`;
-
-    let task2 = "array.shift()";
-    array.shift();
-    let answer2 = `Answer:\n[${array}];`;
     
-    let task3 = 'array.filter(el => el % 2 !== 0).toLeftSide();';
-    let evenAnswer = array.filter(el => el % 2 !== 0);
-    let answer3 = `Answer:\n[${evenAnswer}];`;
+    let task2 = 'array.filter("No > 3").riseTwoHand()';
+    let riseHand = array.filter(el => el > 3);
+    let answer2 = `Answer:\n[${riseHand}];`;
     
-    let task4 = 'array.map(el => el % 2 === 0).toSitdown();';
+    let task3 = 'array.map(el => el % 2 === 0).toSitdown();';
     let newFiltered = array.map(element => element % 2 === 0 ? 'sit' : element);
-    let answer4 = `Answer:\n[${newFiltered}];`;
+    let answer3 = `Answer:\n[${newFiltered}];`;
     
-    let task5 = 'array.slice(' + parseInt(array.length / 2) + ')';
+    let task4 = 'array.slice(' + parseInt(array.length / 2) + ')';
     let taskRest = array.slice(parseInt(array.length / 2));
-    let answer5 = `Answer:\n[${taskRest}];`;
+    let answer4 = `Answer:\n[${taskRest}];`;
     
-    let task6 = 'array.reverse("students")';
-    array.reverse();
-    let answer6 = `Answer:\n[${array}];`;
+    let randindex = Math.floor(Math.random() * array.length);
+    let task5 = 'array.find(' + array[randindex] + ').standBeforeStudents()';
+    let popToStudents = array.find(el => el == array[randindex]);
+    let answer5 = `Answer:\n[${popToStudents}];`;
 
-    
+    let task6 = 'array.push("bagsh1")';
+    array.push('bagsh1');
+    let answer6 = `Answer:\n[${array}];`;
         
     slides = [
         { task: task1, answer: answer1 },
