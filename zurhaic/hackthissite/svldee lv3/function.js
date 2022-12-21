@@ -21,5 +21,24 @@ button.addEventListener("click", () => {
     let trophy = document.createElement("div");
     trophy.innerHTML = "<img class='trophyImg' src='https://cdn-icons-png.flaticon.com/512/3557/3557510.png'>"
     body.appendChild(trophy);
+<<<<<<< HEAD
+=======
+    nextButton.style.display = "flex";
+    nextButton.style.backgroundColor = "#04AA6D";
+    nextButton.style.width = "60px";
+    nextButton.style.padding = "3px";
+    nextButton.style.borderRadius = "10px";
+    nextButton.style.transition = "0.5s";
+    nextButton.style.display = "flex";
+    nextButton.style.paddingLeft = "10px";
+    nextButton.addEventListener("mouseover", (event) => {
+      nextButton.style.backgroundColor = "#045b3b";
+    });
+    nextButton.addEventListener("mouseout", (event) => {
+      nextButton.style.backgroundColor = "#04aa6d";
+    });
+  } else {
+    alert("You idiot haha \nTip: inspect");
+>>>>>>> fd9e06c (hack site end)
   }
 });
