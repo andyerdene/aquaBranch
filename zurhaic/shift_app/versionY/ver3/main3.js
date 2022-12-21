@@ -54,6 +54,10 @@ function genArray() {
     let task5 = 'array.find(' + array[randindex] + ').standBeforeStudents()';
     let popToStudents = array.find(el => el == array[randindex]);
     let answer5 = `Answer:\n[${popToStudents}];`;
+
+    let task6 = 'array.push("bagsh1")';
+    array.push('bagsh1');
+    let answer6 = `Answer:\n[${array}];`;
         
     slides = [
         { task: task1, answer: answer1 },
@@ -61,6 +65,7 @@ function genArray() {
         { task: task3, answer: answer3 },
         { task: task4, answer: answer4 },
         { task: task5, answer: answer5 },
+        { task: task6, answer: answer6 },
     ];
 };
 

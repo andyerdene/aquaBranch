@@ -37,22 +37,28 @@ function genArray() {
     let task1 = 'array.pop();';
     array.pop();
     let answer1 = `Answer:\n[${array}];`;
+
+    let task2 = "array.shift()";
+    array.shift();
+    let answer2 = `Answer:\n[${array}];`;
     
-    let task2 = 'array.filter(el => el % 2 !== 0).toLeftSide();';
+    let task3 = 'array.filter(el => el % 2 !== 0).toLeftSide();';
     let evenAnswer = array.filter(el => el % 2 !== 0);
-    let answer2 = `Answer:\n[${evenAnswer}];`;
+    let answer3 = `Answer:\n[${evenAnswer}];`;
     
-    let task3 = 'array.map(el => el % 2 === 0).toSitdown();';
+    let task4 = 'array.map(el => el % 2 === 0).toSitdown();';
     let newFiltered = array.map(element => element % 2 === 0 ? 'sit' : element);
-    let answer3 = `Answer:\n[${newFiltered}];`;
+    let answer4 = `Answer:\n[${newFiltered}];`;
     
-    let task4 = 'array.slice(' + parseInt(array.length / 2) + ')';
+    let task5 = 'array.slice(' + parseInt(array.length / 2) + ')';
     let taskRest = array.slice(parseInt(array.length / 2));
-    let answer4 = `Answer:\n[${taskRest}];`;
+    let answer5 = `Answer:\n[${taskRest}];`;
     
-    let task5 = 'array.reverse("students")';
+    let task6 = 'array.reverse("students")';
     array.reverse();
-    let answer5 = `Answer:\n[${array}];`;
+    let answer6 = `Answer:\n[${array}];`;
+
+    
         
     slides = [
         { task: task1, answer: answer1 },
@@ -60,6 +66,7 @@ function genArray() {
         { task: task3, answer: answer3 },
         { task: task4, answer: answer4 },
         { task: task5, answer: answer5 },
+        { task: task6, answer: answer6 },
     ];
 };
 
