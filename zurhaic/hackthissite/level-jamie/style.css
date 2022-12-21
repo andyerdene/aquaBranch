@@ -1,0 +1,84 @@
+body {
+  background-image: url(../img/209037.gif);
+}
+.container {
+  max-width: 980px;
+  width: 90%;
+  margin: 0 auto;
+}
+main {
+  margin-top: 50px !important;
+
+  width: 40%;
+  border-radius: 80px;
+  background-color: rgba(49, 214, 34, 0.293);
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.tip {
+  width: 60%;
+  background-color: rgba(209, 209, 209, 0.812);
+  padding: 50px 30px;
+  margin: 0px auto;
+  border-radius: 30px;
+  /* border: 1px ridge rgb(3, 67, 10); */
+  box-shadow: 1px 1px 10px greenyellow;
+}
+
+.tip p {
+  font-size: 34px;
+  color: white;
+}
+
+.form {
+  width: 60%;
+  margin: 40px auto;
+  text-align: center;
+}
+::placeholder {
+  color: white;
+  /* opacity: 1; */
+}
+
+.password {
+  display: block;
+  width: 60%;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  margin: 0% auto;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgb(49, 214, 34);
+  color: black;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  background-color: rgb(0, 255, 102);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.nextBtn {
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  background-color: rgb(0, 255, 102);
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+}
