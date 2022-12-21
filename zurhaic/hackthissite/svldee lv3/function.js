@@ -36,5 +36,7 @@ button.addEventListener("click", () => {
     nextButton.addEventListener("mouseout", (event) => {
       nextButton.style.backgroundColor = "#04aa6d";
     });
+  } else {
+    alert("You idiot haha \nTip: inspect");
   }
 });
