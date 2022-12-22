@@ -1,24 +1,19 @@
-// let input = document.getElementById("input");
+let roar = 7 + 8 * 9;
+let meow = roar % 8;
+let tweet = meow * 4;
+let oink = tweet / 2 - 2;
+let moo = oink % 3;
+let woof = moo * 7;
 
-// let roar = 7 + 8 * 9;
-// let meow = roar % 8;
-// let tweet = meow * 4;
-// let oink = tweet / 2 - 2;
-// let moo = oink % 3;
+const input = document.querySelector(".password");
+const btn = document.querySelector(".btn");
 
-// let input = 1234567890;
-// function check(input) {
-//     if (input.legth != oink) {
-//         alert("loser! :)");
-//     } else {
-//         alert("winner! :)");
-//     }
-// }
-
-function check() {
-    if (password.legth != oink) {
-        console.log("loser! :)");
+btn.addEventListener("click", () => {
+    let inputValue = input.value;
+    let length = inputValue.length;
+    if (oink == length) {
+        alert("🎊 Та амжилтай давлаа!!! 🎉");
     } else {
-        console.log("winner! :)");
+        alert("Буруу password!!! 🥲");
     }
-};
+});
