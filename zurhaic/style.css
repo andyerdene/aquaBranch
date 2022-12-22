@@ -1,17 +1,204 @@
 body {
-    background-color: aqua;
+  margin: 0;
+  padding: 20px;
+  background-color: aqua;
 }
 
-.play {
-    text-decoration: none;
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(134, 167, 218, 1) 4%,
+    rgba(11, 11, 153, 1) 30%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 100px;
+  box-sizing: border-box;
 }
 
-.img {
-    height: 80vh;
-    width: 20%;
+.desc::after {
+  content: ">";
 }
-.img:first-child{
-    background-image: url(./image/aquqman.webp);
-    background-position: center;
-    background-size: cover, 20%;
+.desc::before {
+  content: "<";
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: aqua;
+}
+
+.content h1 {
+  font-size: 42px;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  color: aqua;
+}
+.content p {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  font-size: 24px;
+  color: rgb(0, 255, 0);
+}
+.center {
+  width: 100%;
+  height: max-content;
+  background-color: rgba(0, 217, 255, 0.8);
+  /* height: 80vh; */
+  box-sizing: border-box;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+
+.mainGame {
+  background-image: url(https://user-images.githubusercontent.com/18351809/46888871-624a3900-ce7f-11e8-808e-99fd90c8a3f4.png);
+  height: 350px;
+  background-position: center;
+  background-size: contain;
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.otherGame {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 20px;
+}
+.game {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game:first-child {
+  background-image: url(https://cf.ltkcdn.net/horoscopes/images/orig/209981-1600x1067-Astrology-book.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.game:last-child {
+  background-image: url(https://helios-i.mashable.com/imagery/articles/01gkokwlZHtszBi0LcjXbti/images-6.fill.size_2000x1303.v1611688519.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.playBtn {
+  background-image: linear-gradient(
+    90deg,
+    rgba(134, 167, 218, 1) 10%,
+    rgba(11, 11, 153, 1) 39%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 10px 30px;
+  margin: 50px auto 10px;
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.5s;
+  color: white;
+  border: 3px solid white;
+  box-shadow: 1px 1px 10px black;
+}
+
+.bigPlayBtn {
+  background-image: linear-gradient(
+    90deg,
+    rgba(134, 167, 218, 1) 10%,
+    rgba(11, 11, 153, 1) 39%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 10px 30px;
+  margin: 40px auto;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 24px;
+  transition: all 0.5s;
+  color: white;
+  box-shadow: 1px 1px 10px black;
+}
+
+.playBtn:hover {
+  box-shadow: inset 1px 2px 10px rgb(15, 39, 177);
+  background: linear-gradient(
+    90deg,
+    rgba(11, 11, 153, 1) 2%,
+    rgba(134, 167, 218, 1) 28%,
+    rgba(116, 144, 208, 1) 78%,
+    rgba(11, 11, 153, 1) 98%
+  );
+  transition: all 1s;
+  color: rgb(230, 237, 111);
+}
+.bigPlayBtn:hover {
+  box-shadow: inset 1px 2px 10px rgb(14, 34, 95);
+  background: linear-gradient(
+    90deg,
+    rgba(11, 11, 153, 1) 2%,
+    rgba(134, 167, 218, 1) 28%,
+    rgba(116, 144, 208, 1) 78%,
+    rgba(11, 11, 153, 1) 98%
+  );
+  transition: box-shadow 0.3s;
+  color: white;
+}
+
+main {
+  display: flex;
+}
+aside {
+  height: 80vh;
+  width: 200px;
+  margin-top: 30px;
+}
+.aside1 {
+  background-image: url(./img/aquaman-diving-ir.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+}
+.aside2 {
+  background-image: url(./img/8f19c32afa9d5acb9fa1ec437a7e913e-1\ 2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.mainGameName {
+  justify-self: center;
+  font-size: 46px;
+  color: white;
+  color: rgb(0, 20, 196);
+  align-self: center;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.572);
+  border-radius: 30px;
+}
+
+.gameName {
+  margin-top: 80px;
+  align-self: center;
+  color: rgb(0, 20, 196);
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.572);
+  border-radius: 30px;
 }
