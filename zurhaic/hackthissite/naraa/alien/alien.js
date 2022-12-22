@@ -1,4 +1,4 @@
-const form = document.querySelector("form"),
+const myForm = document.querySelector("form"),
   userReply = document.getElementById("reply"),
   sendButton = document.getElementById("send"),
   riddle = document.getElementById("message");
@@ -18,12 +18,17 @@ sendButton.addEventListener("click", () => {
   let userInput = getReply();
   if (userInput !== "vgj") {
     popMessage.innerText = "Таны хариулт ойлгомжгүй байна. Харь гаригийнхантай ойлголцож чадсангүй. ";
-    form.appendChild(popMessage);
+    myForm.appendChild(popMessage);
   } else {
     popMessage.innerText = "Ta зөв хариултыг илгээлээ! Ta харь гаригийнхантай амжилттай ойлголцож чадлаа!";
-    form.appendChild(popMessage);
+    myForm.appendChild(popMessage);
     sendButton.style.display = "none";
     nextLevel.innerHTML = "<a href ='#'>Go to next level</a> ";
-    form.appendChild(nextLevel);
+    myForm.appendChild(nextLevel);
   }
 });
+
+// let scriptElement = document.createElement("script");
+// scriptElement.type = "text/javascript";
+// scriptElement.src = "alien.js";
+// document.body.appendChild(scriptElement);
