@@ -19,15 +19,15 @@ main {
 .tip {
   width: 60%;
   background-color: rgba(209, 209, 209, 0.812);
-  padding: 50px 30px;
+  padding: 1rem;
   margin: 0px auto;
-  border-radius: 30px;
+  border-radius: 1.5rem;
   /* border: 1px ridge rgb(3, 67, 10); */
   box-shadow: 1px 1px 10px greenyellow;
 }
 
 .tip p {
-  font-size: 34px;
+  font-size: 1.1rem;
   color: white;
 }
 
