@@ -1,6 +1,6 @@
 let myForm = document.querySelector("form"),
     reply = document.getElementById("reply"), 
-    btn = document.getElementById("send");
+    btn = document.getElementById("sent");
 
 let myMsg = document.createElement("div"),
     nextButton = document.createElement("button");
