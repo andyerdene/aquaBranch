@@ -17,7 +17,7 @@ btn.addEventListener("click", () => {
   if (output) {
     btn.style.display = "none";
     let nextBtn = document.createElement("a");
-    nextBtn.setAttribute("href", "");
+    nextBtn.setAttribute("href", "../yunchir/index.html");
     nextBtn.setAttribute("class", "nextBtn");
     nextBtn.innerText = "Next";
     form.appendChild(nextBtn);

@@ -16,9 +16,9 @@
 // }
 
 function check() {
-    if (password.legth != oink) {
-        console.log("loser! :)");
-    } else {
-        console.log("winner! :)");
-    }
-};
+  if (password.legth != oink) {
+    console.log("loser! :)");
+  } else {
+    console.log("winner! :)");
+  }
+}
