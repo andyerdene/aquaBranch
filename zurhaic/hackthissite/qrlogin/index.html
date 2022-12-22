@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styleqrlogin.css" />
+    <title>Hack this site</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="tip">
+        <p id="tip">
+          QR код дотроос вэб хөгжүүлэлттэй холбоотой мэдээллийг олж нууц үг оруулах хэсэгт
+          оруулна уу! QR код тус бүрээс нэг нийт 4 зүйлийг холбож хийнэ.
+        </p>
+      </div>
+      <div class="form">
+        <input
+          class="password"
+          type="text"
+          placeholder="Enter your password:"
+          id="input_password"
+        />
+        <button type="submit" id="submit">Submit</button>
+        <a href="../Tuulai/index.html"
+          ><button
+            type="button"
+            class="hide"
+            name="next_button"
+            id="next_button"
+          >
+            Next page
+          </button></a
+        >
+      </div>
+    </main>
+
+    <div class="container">
+      <p id="hints">Hints?</p>
+      <div class="row">
+        <img src="../img/qr_code_1.png" style="width: 100px" alt="qr 1" />
+        <img src="../img/qr_code_2.png" style="width: 100px" alt="qr 2" />
+        <img src="../img/qr_code_3.png" style="width: 100px" alt="qr 3" />
+        <img src="../img/qr_code_4.png" style="width: 100px" alt="qr 4" />
+      </div>
+    </div>
+    <script src="./mainqrlogin.js"></script>
+  </body>
+</html>
