@@ -25,5 +25,22 @@ btn.addEventListener("click", () => {
       "Баяр хүргье та амжилтай давлаа !!! " +
       "<br>" +
       '<span style= " font-size: 14px;">Next дарж үргэлжлүүлнэ үү<span>';
+    document.querySelector("main").style.backgroundColor =
+      "rgba(0, 0, 0, 0.468);";
+    document.querySelector(".tip").style.backgroundColor = "rgb(49, 214, 34)";
+  } else {
+    input.style.backgroundColor = "red";
+    input.value = "";
+    input.placeholder = "wrong!!!!";
+    document.querySelector(".tip").style.backgroundColor = "red";
+    document.querySelector("#tip").innerText = "Зөв бич л дээ!!!!!";
+    setInterval(() => {
+      document.querySelector(".tip").style.backgroundColor =
+        "rgba(209, 209, 209, 0.812)";
+      document.querySelector("#tip").innerText =
+        "1000 хүртэлх тэгш тооны нийлбэрийг ол!";
+      input.style.backgroundColor = "rgb(49, 214, 34)";
+      input.placeholder = "Enter your password: ";
+    }, 1500);
   }
 });
