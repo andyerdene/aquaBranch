@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+ }
+ 
+ .card {
+    height: 50vh;
+    font-size: 25px;
+    font-weight: 900;
+    color: #000000;
+ }
+ 
+ #input, #score {
+    width: 80px;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    background-color: lightgrey;
+ }
+ 
+ #clock {
+    min-width: 200px;
+    padding: 3px;
+    background-color: lightgrey;
+ }
+  #score {
+    font-size: 22px;
+  }
+ 
+ 
+ #next, #answer, #score, #plusScore, #minusScore {
+    display: none;
+ }
+ 

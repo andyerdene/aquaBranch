@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./img/787a4ccfd91b06ac17e6dfbc196229b8.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.one {
+  color: white;
+  text-decoration: none;
+  cursor: default;
+  margin-left: 110px;
+
+}
+
+section {
+  margin-bottom: 30px;
+}

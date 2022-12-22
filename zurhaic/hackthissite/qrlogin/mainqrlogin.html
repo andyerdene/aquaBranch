@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styleqrlogin.css" />
+    <link
+      href="./bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Hack this site</title>
+  </head>
+  <body>
+    <section class="h-100 gradient-form" >
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-xl-10">
+            <div class="card rounded-3 text-black">
+              <div class="row g-0">
+                <div class="col-lg-6 leftSide" id="boxLogin">
+                  <div class="card-body p-md-5 mx-md-4">
+                    <div class="text-center">
+                      <img
+                        src="../img/undraw_picture_login.png"
+                        style="width: 185px"
+                        alt="logo"
+                      />
+                      <h4 class="mt-1 mb-5 pb-1">Hack this site</h4>
+                    </div>
+
+                    <form>
+                      <p>Нэвтрэх хэсэг</p>
+
+                      <div class="form-outline mb-4">
+                        <input
+                          type="email"
+                          id="username"
+                          class="form-control"
+                          placeholder="Таны нэр"
+                        />
+                        <label class="form-label" for="form2Example11"
+                          >Хэрэглэгчийн нэр</label
+                        >
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input
+                          type="password"
+                          id="userpassword"
+                          class="form-control"
+                          placeholder="Нууц үг"
+                        />
+                        <label class="form-label" for="form2Example22"
+                          >Олсон нууц үгээ хийнэ үү.</label
+                        >
+                      </div>
+
+                      <div class="text-center pt-1 mb-5 pb-1">
+                        <button
+                          class="btn btn-danger btn-block fa-lg gradient-custom-2 mb-3"
+                          type="button" id="submitBtn"
+                        >
+                          Нэвтрэх
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div id="rightSide"
+                  class="col-lg-6 d-flex align-items-center gradient-custom-2"
+                >
+                  <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                    <h4 class="mb-4" id="messageTitle">
+                      Вэб сайтын харагдах байдалтай холбоотой үгс
+                    </h4>
+                    <p class="small mb-0" id="msgDescription">
+                      Hints? хэсгээс QR кодыг уншиж хэрэгтэй мэдээллээ олж аван нууц үгэнд хийж нэвтэрнэ үү.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+              <p id="hints">
+                <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3 multiCollapseExample4">Hints?</button>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        <img
+                        src="../img/qr_code_1.png"
+                        style="width: 100px"
+                        alt="qr 1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        <img
+                        src="../img/qr_code_2.png"
+                        style="width: 100px"
+                        alt="qr 1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample3">
+                    <div class="card card-body">
+                        <img
+                        src="../img/qr_code_3.png"
+                        style="width: 100px"
+                        alt="qr 1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample4">
+                    <div class="card card-body">
+                        <img
+                        src="../img/qr_code_4.png"
+                        style="width: 100px"
+                        alt="qr 1"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+      <br/>
+      <br/>
+    </section>
+    <script src="./mainqrlogin.js"></script>
+    <script
+      src="./bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
