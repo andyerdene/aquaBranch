@@ -6,6 +6,7 @@ let answerBtn = document.getElementById("answer");
 let plusBtn = document.getElementById("plusScore");
 let minusBtn = document.getElementById("minusScore");
 let sumScore = document.querySelector("#score");
+let history = document.querySelector('.history');
 let num;
 let array;
 let slides;
@@ -30,49 +31,44 @@ function genArray() {
   sumScore.style.display = "block";
 
   // tasks and answers setup
-  let task1 = "array.reverse()";
-  array.reverse();
+  let task1 = 'array.sort()';
+  let state1 = `Last state ${[...array]}`;
+  array.sort();
   let answer1 = `Answer:\n[${array}];`;
 
-  let task2 = "array.sort()";
-  array.sort();
+  let task2 = 'array.push("manager + chair + cola")';
+  let state2 = `Last state ${[...array]}`;
+  array.push("manager on chair drinking cola");
   let answer2 = `Answer:\n[${array}];`;
 
-  let task3 = "array.shift()";
-  array.shift();
+  let task3 = 'array.reverse()';
+  let state3 = `Last state ${[...array]}`;
+  array.reverse();
   let answer3 = `Answer:\n[${array}];`;
 
-  let task4 = 'array.push("random нүдний шилтэй хүн")';
-  array.push("random нүдний шилтэй хүн ");
+  let task4 = 'array.shift()';
+  let state4 = `Last state ${[...array]}`;
+  array.shift();
   let answer4 = `Answer:\n[${array}];`;
-
-  let task5 = "array.pop()";
-  array.pop();
+  
+  let task5 = 'array = array.filter((el) => el > 4)';
+  let state5 = `Last state ${[...array]}`;
+  array = array.filter((el) => el > 4);
   let answer5 = `Answer:\n[${array}];`;
 
-  let task6 = "array.splice(3, 1,)";
-  array.splice(3, 1);
+  let task6 = 'array.sort((a, b) => a - b)';
+  let state6 = `Last state ${[...array]}`;
+  array.sort((a, b) => a - b);
   let answer6 = `Answer:\n[${array}];`;
 
-  let task7 =
-    'let person=0; for (i=0;i<array.length;i++){ if (person<array[i]){person=array[i]; } }person +="happy new year!"';
-  let person = 0;
-  for (i = 0; i < array.length; i++) {
-    if (person < array[i]) {
-      person = array[i];
-    }
-  }
-  person += ": happy new year!";
-  let answer7 = `Answer:\n[${person}];`;
 
   slides = [
-    { task: task1, answer: answer1 },
-    { task: task2, answer: answer2 },
-    { task: task3, answer: answer3 },
-    { task: task4, answer: answer4 },
-    { task: task5, answer: answer5 },
-    { task: task6, answer: answer6 },
-    { task: task7, answer: answer7 },
+    { task: task1, answer: answer1, state: state1 },
+    { task: task2, answer: answer2, state: state2 },
+    { task: task3, answer: answer3, state: state3 },
+    { task: task4, answer: answer4, state: state4 },
+    { task: task5, answer: answer5, state: state5 },
+    { task: task6, answer: answer6, state: state6 },
   ];
 }
 
@@ -88,17 +84,20 @@ function minusScore() {
   sumScore.value = score;
 }
 
-nextBtn.addEventListener("click", goNext);
+nextBtn.addEventListener('click', goNext);
 function goNext() {
+nextBtn.style.display = 'none';
+
   if (indexSlide == slides.length) {
-    screenText.innerText = "Thank you!";
-    stopTimer();
+      screenText.innerText = 'Thank you!';
+      stopTimer();
+      history.innerText = '';
   } else {
-    screenText.innerText = slides[indexSlide].task;
-    nextBtn.style.display = "none";
-    answerBtn.style.display = "block";
-    plusBtn.disabled = true;
-    minusBtn.disabled = true;
+      screenText.innerText = slides[indexSlide].task;
+      answerBtn.style.display = 'block';
+      plusBtn.disabled = true;
+      minusBtn.disabled = true;
+      history.innerText = slides[indexSlide].state;
   }
 }
 
@@ -116,13 +115,12 @@ function answerMe() {
 function shuffle(num) {
   // Create a new array with input number elements
   let arr = [];
-  for (i = 0; i < num; i++) {
+  for (let i = 0; i < num; i++) {
     arr.push(i);
   }
 
   let currentIndex = arr.length,
     randomIndex;
-
   // While there remain elements to shuffle.
   while (currentIndex != 0) {
     // Pick a remaining element.
