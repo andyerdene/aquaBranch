@@ -9,11 +9,11 @@ const input = document.querySelector(".password");
 const btn = document.querySelector(".btn");
 
 btn.addEventListener("click", () => {
-    let inputValue = input.value;
-    let length = inputValue.length;
-    if (oink == length) {
-        alert("🎊 Та амжилтай давлаа!!! 🎉");
-    } else {
-        alert("Буруу password!!! 🥲");
-    }
+  let inputValue = input.value;
+  let length = inputValue.length;
+  if (oink == length) {
+    alert("🎊 Та амжилтай давлаа!!! 🎉");
+  } else {
+    alert("Буруу password!!! 🥲");
+  }
 });
