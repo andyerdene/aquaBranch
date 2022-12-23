@@ -8,13 +8,16 @@
     <link href="./alien.css" rel="stylesheet" />
   </head>
   <body>
-    <p class="instruction">Таньд харь гаригийнхнаас зурвас ирсэн байна.</p>
+    <div class="tip">
+        <p class="instruction" id="tip">Таньд харь гаригийнхнаас зурвас ирсэн байна.</p>
     <div id="message"></div>
     <form>
-      <p class="instruction">Тэдэнд тохиромжтой хариултыг илгээнэ үү.</p>
-      <input id="reply" type="text" />
+      <p class="instruction"> Тэдэнд тохиромжтой хариултыг илгээнэ үү.</p>
+      </div>
+      <input id="reply" type="text" class="password" />
     </form>
-    <button id="send"></button>
+    <button id="send" class="btn"></button>
+    <a href="../../sharaw/index.html" class="nextBtn">next</a>
     <script src="./alien.js"></script>
     <!-- <script>
       document.addEventListener("keydown", (e) => {
@@ -30,3 +33,4 @@
     </script> -->
   </body>
 </html>
+

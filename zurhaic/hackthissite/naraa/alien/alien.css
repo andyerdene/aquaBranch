@@ -1,31 +1,118 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-image: url(../../img/209037.gif);
+  font-family: "Arial", sans-serif;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 #message {
-    font-size: 30px;
-    font-family: 'Papyrus', fantasy;
-    border: 1px dashed black;
-    padding: 40px;
+  font-size: 30px;
+  font-family: "Papyrus", fantasy;
+  border: 1px dashed black;
+  padding: 40px;
 }
 
 .instruction {
-    font-size: 15px;
-    font-family: 'Arial', sans-serif;
-    font-weight: 600;
+  font-size: 15px;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 980px;
+  width: 90%;
+  margin: 0 auto;
+}
+main {
+  margin-top: 50px !important;
+
+  width: 40%;
+  border-radius: 80px;
+  background-color: rgba(49, 214, 34, 0.293);
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.tip {
+  width: 60%;
+  background-color: rgba(209, 209, 209, 0.812);
+  padding: 50px 30px;
+  margin: 0px auto;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px greenyellow;
+}
+
+.tip p {
+  font-size: 24px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form {
+  width: 60%;
+  margin: 40px auto;
+  text-align: center;
+}
+::placeholder {
+  color: black;
+}
+
+.password {
+  display: block;
+  width: 300px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  margin: 0% auto;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgb(49, 214, 34);
+  color: black;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  background-color: rgb(0, 255, 102);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.nextBtn {
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  background-color: rgb(0, 255, 102);
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  padding-top: 5px;
+  box-sizing: border-box;
+  display: none;
 }

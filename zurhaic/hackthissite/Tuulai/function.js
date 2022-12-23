@@ -14,7 +14,7 @@ btn.addEventListener("click", () => {
   if (output) {
     btn.style.display = "none";
     let nextBtn = document.createElement("a");
-    nextBtn.setAttribute("href", "../qrlogin/mainqrlogin.html");
+    nextBtn.setAttribute("href", "../qrlogin/index.html");
     nextBtn.setAttribute("class", "nextBtn");
     nextBtn.innerText = "Next";
     form.appendChild(nextBtn);
