@@ -19,16 +19,20 @@ main {
 .tip {
   width: 60%;
   background-color: rgba(209, 209, 209, 0.812);
-  padding: 1rem;
+  padding: 50px 30px;
   margin: 0px auto;
-  border-radius: 1.5rem;
-  /* border: 1px ridge rgb(3, 67, 10); */
+  border-radius: 30px;
   box-shadow: 1px 1px 10px greenyellow;
 }
 
 .tip p {
-  font-size: 1.1rem;
+  font-size: 34px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .form {
@@ -37,8 +41,7 @@ main {
   text-align: center;
 }
 ::placeholder {
-  color: white;
-  /* opacity: 1; */
+  color: black;
 }
 
 .password {

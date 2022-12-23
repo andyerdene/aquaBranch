@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alien message</title>
+    <link href="./alien.css" rel="stylesheet" />
+  </head>
+  <body>
+    <p class="instruction">Таньд харь гаригийнхнаас зурвас ирсэн байна.</p>
+    <div id="message"></div>
+    <form>
+      <p class="instruction">Тэдэнд тохиромжтой хариултыг илгээнэ үү.</p>
+      <input id="reply" type="text" />
+    </form>
+    <button id="send"></button>
+    <script src="./alien.js"></script>
+    <!-- <script>
+      document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey || (e.keyCode >= 112 && e.keyCode <= 123)) {
+          e.stopPropagation();
+          e.preventDefault();
+        }
+      });
+      window.oncontextmenu = function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+      };
+    </script> -->
+  </body>
+</html>

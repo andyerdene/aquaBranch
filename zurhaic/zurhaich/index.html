@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+
+      <div class="magicBall">
+        <button id="start">Start</button>
+      </div>
+    </div>
+    <div id="opacityBg">
+      <div class="top">
+        <div class="quest">
+          <div class="labelBox">
+            <label for="answer1" id="question1"></label>
+          </div>
+          <input id="answer1" type="text" />
+        </div>
+        <div class="quest">
+          <div class="labelBox">
+            <label for="answer2" id="question2"></label>
+          </div>
+          <input id="answer2" type="text" />
+        </div>
+        <div class="quest">
+          <div class="labelBox">
+            <label for="answer3" id="question3"></label>
+          </div>
+          <input id="answer3" type="text" />
+        </div>
+      </div>
+      <div id="output"></div>
+      <button id="enter">See result</button>
+      <a href="./index.html">
+        <button id="reset">Reset</button>
+      </a>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

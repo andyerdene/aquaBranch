@@ -1,4 +1,4 @@
-let password = "#31d62";
+let password = "chisainymaa";
 let form = document.querySelector(".form");
 let input = document.querySelector(".password");
 let output = false;
@@ -14,12 +14,12 @@ btn.addEventListener("click", () => {
   if (output) {
     btn.style.display = "none";
     let nextBtn = document.createElement("a");
-    nextBtn.setAttribute("href", "../qrlogin/mainqrlogin.html");
+    nextBtn.setAttribute("href", "../svldee_lv3/level-three.html");
     nextBtn.setAttribute("class", "nextBtn");
     nextBtn.innerText = "Next";
     form.appendChild(nextBtn);
     document.getElementById("tip").innerHTML =
-      "🎊 Баяр хүргье та амжилтай давлаа 🎉 🙌🏻!!! " +
+      "Баяр хүргье та амжилтай давлаа🥰 " +
       "<br>" +
       '<span style= " font-size: 14px;">Next дарж үргэлжлүүлнэ үү<span>';
     document.querySelector("main").style.backgroundColor =
@@ -29,13 +29,14 @@ btn.addEventListener("click", () => {
     input.style.backgroundColor = "red";
     input.value = "";
     input.placeholder = "wrong!!!!";
-    document.querySelector("#tip").innerText = "💩 ";
-    let stop = setInterval(() => {
-      document.querySelector("#tip").innerHTML =
-        '<span style="color: #31d622">Ногоон.pop() </span>' + "олоорой!";
-      input.style.backgroundColor = "black";
-      input.placeholder = "Enter your password ";
-      clearInterval(stop);
-    }, 1000);
+    document.querySelector(".tip").style.backgroundColor = "red";
+    document.querySelector("#tip").innerText = "you are noooob🫠";
+    setInterval(() => {
+      document.querySelector(".tip").style.backgroundColor =
+        "rgba(209, 209, 209, 0.812)";
+      document.querySelector("#tip").innerText = "You can't do it.🤪🤪🤪";
+      input.style.backgroundColor = "rgb(49, 214, 34)";
+      input.placeholder = "Enter your password: ";
+    }, 1500);
   }
 });
