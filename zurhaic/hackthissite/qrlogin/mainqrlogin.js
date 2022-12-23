@@ -1,3 +1,4 @@
+
 const inputString = "jrwjr{m{|";
 const num = 5;
 let form = document.querySelector('.form');
@@ -28,4 +29,5 @@ btnSubmit.addEventListener("click", function (e) {
     alert("Амжилтгүй....\nДахин оролдоно уу!!!");
     input.value = "";
   }
+
 });

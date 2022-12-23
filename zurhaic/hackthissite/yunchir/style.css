@@ -32,8 +32,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-  ;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .form {
@@ -42,7 +41,7 @@ main {
   text-align: center;
 }
 ::placeholder {
-  color: 
+  color: black;
 }
 
 .password {

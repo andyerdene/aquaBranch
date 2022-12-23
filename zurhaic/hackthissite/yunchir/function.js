@@ -1,4 +1,4 @@
-let password = "chisainymaa❤️";
+let password = "chisainymaa";
 let form = document.querySelector(".form");
 let input = document.querySelector(".password");
 let output = false;
@@ -14,7 +14,7 @@ btn.addEventListener("click", () => {
   if (output) {
     btn.style.display = "none";
     let nextBtn = document.createElement("a");
-    nextBtn.setAttribute("href", "");
+    nextBtn.setAttribute("href", "../svldee_lv3/level-three.html");
     nextBtn.setAttribute("class", "nextBtn");
     nextBtn.innerText = "Next";
     form.appendChild(nextBtn);
@@ -34,8 +34,7 @@ btn.addEventListener("click", () => {
     setInterval(() => {
       document.querySelector(".tip").style.backgroundColor =
         "rgba(209, 209, 209, 0.812)";
-      document.querySelector("#tip").innerText =
-        "You can't do it.🤪🤪🤪";
+      document.querySelector("#tip").innerText = "You can't do it.🤪🤪🤪";
       input.style.backgroundColor = "rgb(49, 214, 34)";
       input.placeholder = "Enter your password: ";
     }, 1500);
