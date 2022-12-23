@@ -1,40 +1,39 @@
-/*
-    /^[a-zA-Z][a-zA-Z0-9]{3,32}/gi
-    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm
-*/
-let usernameRef = document.getElementById("username");
-let passwordRef = document.getElementById("password");
-let submitBtn = document.getElementById("submit");
-let messageRef = document.getElementById("message-ref");
-
-let isPasswordValid = () => {
-  /* Password should be atleast 8 characters long. Should contain atleast 1 number, 1 special symbol , 1 lower case and 1 upper case */
-  const passwordRegex = /87/gm;
-  return passwordRegex.test(passwordRef.value);
-};
-
-passwordRef.addEventListener("input", () => {
-  if (!isPasswordValid()) {
-    messageRef.style.visibility = "hidden";
-  }
-});
-
-submitBtn.addEventListener("mouseover", () => {
-  if (!isPasswordValid()) {
-    let containerRect = document
-      .querySelector(".container")
-      .getBoundingClientRect();
-    let submitRect = submitBtn.getBoundingClientRect();
-    let offset = submitRect.left - containerRect.left;
-    console.log(offset);
-    if (offset <= 100) {
-      submitBtn.style.transform = "translateX(16.25em)";
-    } else {
-      submitBtn.style.transform = "translateX(0)";
+eval(
+  (function (p, a, c, k, e, d) {
+    e = function (c) {
+      return (
+        (c < a ? "" : e(parseInt(c / a))) +
+        ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+      );
+    };
+    if (!"".replace(/^/, String)) {
+      while (c--) {
+        d[e(c)] = k[c] || e(c);
+      }
+      k = [
+        function (e) {
+          return d[e];
+        },
+      ];
+      e = function () {
+        return "\\w+";
+      };
+      c = 1;
     }
-  }
-});
-submitBtn.addEventListener("click", () => {
-  messageRef.style.visibility = "visible";
-  document.querySelector("#next").style.display = "block";
-});
+    while (c--) {
+      if (k[c]) {
+        p = p.replace(new RegExp("\\b" + e(c) + "\\b", "g"), k[c]);
+      }
+    }
+    return p;
+  })(
+    '1 L=3.5("u");1 8=3.5("t");1 2=3.5("s");1 b=3.5("m-r");1 a=()=>{q j=/p/o;n j.l(8.v)};8.9("x",()=>{6(!a()){b.4.e="y"}});2.9("z",()=>{6(!a()){1 k=3.h(".A").c();1 i=2.c();1 7=i.d-k.d;C.D(7);6(7<=E){2.4.g="f(F.G)"}H{2.4.g="f(0)"}}});2.9("I",()=>{b.4.e="J";3.h("#K").4.B="w"});',
+    48,
+    48,
+    "|let|submitBtn|document|style|getElementById|if|offset|passwordRef|addEventListener|isPasswordValid|messageRef|getBoundingClientRect|left|visibility|translateX|transform|querySelector|submitRect|passwordRegex|containerRect|test|message|return|gm|87|const|ref|submit|password|username|value|block|input|hidden|mouseover|container|display|console|log|100|16|25em|else|click|visible|next|usernameRef".split(
+      "|"
+    ),
+    0,
+    {}
+  )
+);
