@@ -14,7 +14,7 @@ btn.addEventListener("click", () => {
   if (output) {
     btn.style.display = "none";
     let nextBtn = document.createElement("a");
-    nextBtn.setAttribute("href", "");
+    nextBtn.setAttribute("href", "../qrlogin/mainqrlogin.html");
     nextBtn.setAttribute("class", "nextBtn");
     nextBtn.innerText = "Next";
     form.appendChild(nextBtn);
@@ -30,11 +30,12 @@ btn.addEventListener("click", () => {
     input.value = "";
     input.placeholder = "wrong!!!!";
     document.querySelector("#tip").innerText = "💩 ";
-    setInterval(() => {
+    let stop = setInterval(() => {
       document.querySelector("#tip").innerHTML =
         '<span style="color: #31d622">Ногоон.pop() </span>' + "олоорой!";
       input.style.backgroundColor = "black";
       input.placeholder = "Enter your password ";
-    }, 1700);
+      clearInterval(stop);
+    }, 1000);
   }
 });
