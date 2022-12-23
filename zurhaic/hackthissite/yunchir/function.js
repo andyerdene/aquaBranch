@@ -34,10 +34,11 @@ btn.addEventListener("click", () => {
     let stop = setInterval(() => {
       document.querySelector(".tip").style.backgroundColor =
         "rgba(209, 209, 209, 0.812)";
-      document.querySelector("#tip").innerText = "You can't do it.🤪🤪🤪";
+      document.querySelector("#tip").innerHTML =
+        "  <p id=tip>YOU CAN DO IT.</p>";
       input.style.backgroundColor = "rgb(49, 214, 34)";
-      input.placeholder = "Enter your password: ";
-    }, 1500);
-    clearInterval(stop);
+      input.placeholder = "Enter your password ";
+      clearInterval(stop);
+    }, 1000);
   }
 });
