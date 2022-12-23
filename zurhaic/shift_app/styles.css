@@ -9,6 +9,10 @@
     color: #000000;
  }
  
+ #screen {
+   font-size: 30px;
+ }
+
  #input, #score {
     width: 80px;
     outline: none;

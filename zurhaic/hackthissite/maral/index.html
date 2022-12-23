@@ -14,29 +14,28 @@
         <h4>HackThisSite 👾 Mission № ...</h4>
         <h3>🧮 Math Time :))</h3>
         <h4>TIP 👇</h4>
-        <textarea name="jsCode" id="jsCode" cols="45" rows="15">
+        <textarea name="jsCode" id="jsCode" cols="40" rows="15">
 
     let roar = 7 + 8 * 9;
     let meow = roar % 8;
     let tweet = meow * 4;
     let oink = tweet / 2 - 2;
     let moo = oink % 3;
+    let woof = moo * 7;
 
-    function check() {
-        if (password.legth != oink) {
-            console.log("loser! :)");
-        } else {
-            console.log("winner! :)");
-        }
+    if (password.length != oink) {
+        console.log("loser! :)");
+    } else {
+        console.log("winner! :)");
     };
         </textarea>
 
         <div id="password">
             <h4>🔑 password:</h4>
-            <input id="input" type="password" placeholder="enter password">
+            <input class="password" type="password" placeholder="enter password">
+            <button type="submit" class="btn">submit</button>
         </div>
     </main>
-
 
     <!-- SCRIPT -->
     <script src="function.js"></script>

@@ -1,31 +1,107 @@
-.gradient-custom-2 {
-  background: #fccb90;
-  background: -webkit-linear-gradient(
-    to right,
-    #ee7724,
-    #d8363a,
-    #dd3675,
-    #b44593
-  );
- 
-  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-@media (min-width: 768px) {
-  .gradient-form {
-    height: 100vh !important;
-  }
-}
-@media (min-width: 769px) {
-  .gradient-custom-2 {
-    border-top-right-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;
-  }
-}
-.hide {
-    display: none;
-}
-
 body {
-  background-image: url('../img/209037.gif');
+  background-image: url("../img/209037.gif");
+}
+.container {
+  max-width: 980px;
+  width: 90%;
+  margin-inline: auto;
+}
+main {
+  margin-top: 50px !important;
+
+  width: 40%;
+  border-radius: 80px;
+  background-color: rgba(49, 214, 34, 0.293);
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.tip {
+  width: 60%;
+  background-color: rgba(209, 209, 209, 0.812);
+  padding: 1rem;
+  margin: 0px auto;
+  border-radius: 1.5rem;
+  /* border: 1px ridge rgb(3, 67, 10); */
+  box-shadow: 1px 1px 10px greenyellow;
+}
+#tip {
+  font-size: 1.1rem;
+  color: black;
+  text-align: justify;
+  line-height: 1;
+}
+.form {
+  width: 60%;
+  margin: 40px auto;
+  text-align: center;
+}
+::placeholder {
+  color: white;
+  /* opacity: 1; */
+}
+
+.password {
+  display: block;
+  width: 60%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  margin: 0% auto;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgb(49, 214, 34);
+  color: black;
+}
+
+#submit {
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  background-color: rgb(0, 197, 79);
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#submit:hover, #next_button:hover {
+  background-color: rgb(0, 150, 60);
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hide {
+  display: none;
+}
+
+#next_button {
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  background-color: rgb(0, 197, 79);
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+
+#next_button a {
+  text-decoration: none;
 }
