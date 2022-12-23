@@ -31,12 +31,13 @@ btn.addEventListener("click", () => {
     input.placeholder = "wrong!!!!";
     document.querySelector(".tip").style.backgroundColor = "red";
     document.querySelector("#tip").innerText = "you are noooob🫠";
-    setInterval(() => {
+    let stop = setInterval(() => {
       document.querySelector(".tip").style.backgroundColor =
         "rgba(209, 209, 209, 0.812)";
       document.querySelector("#tip").innerText = "You can't do it.🤪🤪🤪";
       input.style.backgroundColor = "rgb(49, 214, 34)";
       input.placeholder = "Enter your password: ";
     }, 1500);
+    clearInterval(stop);
   }
 });

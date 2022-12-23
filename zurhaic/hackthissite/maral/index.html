@@ -1,44 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>HackThisSite | mission</title>
-</head>
+  </head>
 
-<body>
-    <main>
-        <h4>HackThisSite 👾 Mission № ...</h4>
-        <h3>🧮 Math Time :))</h3>
-        <h4>TIP 👇</h4>
-        <textarea name="jsCode" id="jsCode" cols="40" rows="15">
+  <body>
+    <main class="container">
+      <div class="tip">
+        <p id="tip">
+          let roar = 7 + 8 * 9; <br />let meow = roar % 8;<br />
+          let tweet = meow * 4;<br />
+          let woof = tweet / 2 - 2;
+        </p>
+      </div>
 
-    let roar = 7 + 8 * 9;
-    let meow = roar % 8;
-    let tweet = meow * 4;
-    let oink = tweet / 2 - 2;
-    let moo = oink % 3;
-    let woof = moo * 7;
-
-    if (password.length != oink) {
-        console.log("loser! :)");
-    } else {
-        console.log("winner! :)");
-    };
-        </textarea>
-
-        <div id="password">
-            <h4>🔑 password:</h4>
-            <input class="password" type="password" placeholder="enter password">
-            <button type="submit" class="btn">submit</button>
-        </div>
+      <div class="form" id="password">
+        <input class="password" type="password" placeholder="enter password" />
+        <button type="submit" class="btn">Submit</button>
+        <a href="../batnyam-hacking/main.html" class="nextBtn">next</a>
+      </div>
     </main>
 
     <!-- SCRIPT -->
     <script src="function.js"></script>
-</body>
-
+  </body>
 </html>
