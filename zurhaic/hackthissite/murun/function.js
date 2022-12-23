@@ -7,19 +7,16 @@ let passwordRef = document.getElementById("password");
 let submitBtn = document.getElementById("submit");
 let messageRef = document.getElementById("message-ref");
 
-
-
 let isPasswordValid = () => {
   /* Password should be atleast 8 characters long. Should contain atleast 1 number, 1 special symbol , 1 lower case and 1 upper case */
   const passwordRegex = /87/gm;
   return passwordRegex.test(passwordRef.value);
 };
 
-
 passwordRef.addEventListener("input", () => {
   if (!isPasswordValid()) {
     messageRef.style.visibility = "hidden";
-  } 
+  }
 });
 
 submitBtn.addEventListener("mouseover", () => {
@@ -32,12 +29,12 @@ submitBtn.addEventListener("mouseover", () => {
     console.log(offset);
     if (offset <= 100) {
       submitBtn.style.transform = "translateX(16.25em)";
-    }
-    else {
+    } else {
       submitBtn.style.transform = "translateX(0)";
     }
   }
 });
 submitBtn.addEventListener("click", () => {
   messageRef.style.visibility = "visible";
+  document.querySelector("#next").style.display = "block";
 });
