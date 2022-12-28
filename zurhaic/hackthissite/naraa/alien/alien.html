@@ -9,28 +9,29 @@
   </head>
   <body>
     <div class="tip">
-        <p class="instruction" id="tip">Таньд харь гаригийнхнаас зурвас ирсэн байна.</p>
+        <p class="instruction" id="tip">Таньд харь гаригийнхнаас монголоор зурвас ирсэн байна.</p>
     <div id="message"></div>
     <form>
-      <p class="instruction"> Тэдэнд тохиромжтой хариултыг илгээнэ үү.</p>
+      <p class="instruction" id="sendThem"> Тэдэнд тохиромжтой хариултыг илгээнэ үү.</p>
       </div>
       <input id="reply" type="text" class="password" />
     </form>
     <button id="send" class="btn"></button>
     <a href="../../sharaw/index.html" class="nextBtn">next</a>
     <script src="./alien.js"></script>
-    <!-- <script>
+    <script>
+      document.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+      }, false);
+   </script>
+   <script>
       document.addEventListener("keydown", (e) => {
-        if (e.ctrlKey || (e.keyCode >= 112 && e.keyCode <= 123)) {
+        if (e.ctrlKey || e.keyCode==123) {
           e.stopPropagation();
           e.preventDefault();
         }
       });
-      window.oncontextmenu = function (e) {
-        e.stopPropagation();
-        e.preventDefault();
-      };
-    </script> -->
+      </script>
   </body>
 </html>
 
