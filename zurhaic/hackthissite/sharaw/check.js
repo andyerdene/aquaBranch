@@ -27,16 +27,23 @@ eval(
     }
     return p;
   })(
-    '5 9="11";5 e=1.2(".e");5 3=1.2(".9");5 b=m;5 c=1.2(".c");3;c.H("G",()=>{5 r=3.l;F(i=0;i<9.E;i++){h(9[i]==r[i]){b=A}k{b=m;C}}h(b){c.4.B="y";5 7=1.x("a");7.j("w","../I-D/K.L");7.j("10","7");7.f="q";e.Z(7);1.Y("8").X="Баяр хүргье та амжилтай давлаа !!! "+"<W>"+\'<v 4= " J-V: U;">q дарж үргэлжлүүлнэ үү<v>\';1.2("T").4.6="p(0, 0, 0, 0.S);";1.2(".8").4.6="n(o, u, t)"}k{3.4.6="g";3.l="";3.s="R!!!!";1.2(".8").4.6="g";1.2("#8").f="Зөв бич л дээ!!!!!";Q(()=>{1.2(".8").4.6="p(d, d, d, 0.P)";1.2("#8").f="O хүртэлх тэгш тооны нийлбэрийг ол!";3.4.6="n(o, u, t)";3.s="N M 9: "},z)}});',
+    '2 l=1.3(".l");2 4=1.3(".b");2 d=t;2 e=1.3(".e");4;2 9=1.3(".9").k;2 h="1a";2 c="";x(i=0;i<9.C;i++){x(j=0;j<h.C;j++){f(9[i]==h[j]){c=c+9[i]+""}}}2 b=c;e.N("O",()=>{2 D=4.o;f(b==D){d=I}q{d=t}f(d){e.5.M="L";2 8=1.K("a");8.w("J","../F-H/G.P");8.w("R","8");8.k="s";l.10(8);1.19("6").y="Баяр хүргье та амжилтай давлаа🥰 "+"<18>"+\'<n 5= " 17-16: 15;">s дарж үргэлжлүүлнэ үү<n>\';1.3("14").5.7="u(0, 0, 0, 0.13);";1.3(".6").5.7="z(A, B, v)"}q{4.5.7="m";4.o="";4.E="12!!!!";1.3(".6").5.7="m";1.3("#6").k="S 11 Z🫠";2 r=Y(()=>{1.3(".6").5.7="u(g, g, g, 0.X)";1.3("#6").y="  <p W=6>Том мөөг түүцгээе.</p>";4.5.7="z(A, B, v)";4.E="V U b ";T(r)},Q)}});',
     62,
-    64,
-    "|document|querySelector|input|style|let|backgroundColor|nextBtn|tip|password||output|btn|209|form|innerText|red|if||setAttribute|else|value|false|rgb|49|rgba|Next|inputValue|placeholder|34|214|span|href|createElement|none|1500|true|display|break|jamie|length|for|click|addEventListener|level|font|index|html|your|Enter|1000|812|setInterval|wrong|468|main|14px|size|br|innerHTML|getElementById|appendChild|class|PASSWORD".split(
+    73,
+    "|document|let|querySelector|input|style|tip|backgroundColor|nextBtn|text||password|result|output|btn|if|209|bigwords|||innerText|form|red|span|value||else|stop|Next|false|rgba|34|setAttribute|for|innerHTML|rgb|49|214|length|inputValue|placeholder|level|index|jamie|true|href|createElement|none|display|addEventListener|click|html|1000|class|you|clearInterval|your|Enter|id|812|setInterval|noooob|appendChild|are|wrong|468|main|14px|size|font|br|getElementById|QWERTYUIOPLKJHGFDSAZXCVBNM".split(
       "|"
     ),
     0,
     {}
   )
 );
+
+// console.log(result);
+// let form = document.querySelector(".form");
+// let input = document.querySelector(".password");
+// let output = false;
+// let btn = document.querySelector(".btn");
+// input;
 // let text = document.querySelector(".text").innerText;
 // let bigwords = "QWERTYUIOPLKJHGFDSAZXCVBNM";
 // let result = "";
@@ -47,5 +54,3 @@ eval(
 //     }
 //   }
 // }
-
-// console.log(result);

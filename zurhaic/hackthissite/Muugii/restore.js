@@ -1,100 +1,39 @@
-window.addEventListener("Ready", event => {
-    const audio = document.querySelector("audio");
-    audio.volume = 0.5;
-    audio.play();
-  });
-
-function logIn() {
-    checkUsername();
-    checkPassword();
-   
-    if (checkUsername() && checkPassword() == true) {
-        nextButton();
-    } if (checkUsername() == false) {
-        errorMsg();
-    } if (checkPassword() == false) {
-        console.log("incorrect password");
-    } if (checkUsername() == true) {
-        successMsg();
+eval(
+  (function (p, a, c, k, e, d) {
+    e = function (c) {
+      return (
+        (c < a ? "" : e(parseInt(c / a))) +
+        ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+      );
+    };
+    if (!"".replace(/^/, String)) {
+      while (c--) {
+        d[e(c)] = k[c] || e(c);
+      }
+      k = [
+        function (e) {
+          return d[e];
+        },
+      ];
+      e = function () {
+        return "\\w+";
+      };
+      c = 1;
     }
-}
-
-
-function checkPassword() {
-    let password = "Boiledpotato";
-    userInput = document.getElementById("pwd").value;
-    if(password == userInput) {
-        return true;
-    } else {
-        pwdInput = document.getElementById('pwd');
-        pwdInput.style.borderColor = "red";
-        return false;
+    while (c--) {
+      if (k[c]) {
+        p = p.replace(new RegExp("\\b" + e(c) + "\\b", "g"), k[c]);
+      }
     }
-}
-
-function nextButton() {
-    let btn = document.createElement("button");
-    btn.innerHTML = "Click Me";
-    document.getElementById("nextBtn").appendChild(btn);
-}
-
-function checkUsername() {
-    let username = "Jeff";
-    userNameInput = document.getElementById("userName").value;
-    if(username == userNameInput) {
-        pwdInput = document.getElementById('userName');
-        pwdInput.style.borderColor = "green";
-        return true;
-    } else {
-        pwdInput = document.getElementById('userName');
-        pwdInput.style.borderColor = "red";
-        console.log("incorrect");
-        return false;
-    }
-}
-
-
-let count = 0;
-function addHint() {
-   
-    if (count < 1) {
-        let hint = document.createElement("P");
-    hint.innerHTML = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-    document.getElementById("hint").appendChild(hint);
-    count = count + 1;
-    } else if (count == 1) {
-        let hint = document.createElement("P");
-    hint.innerHTML = "https://www.youtube.com/watch?v=AfIOBLr1NDU)";
-    document.getElementById("hint").appendChild(hint);
-    count += 1;
-    } else if (count == 2) {
-        let hint = document.createElement("P");
-        hint.innerHTML = "https://www.youtube.com/watch?v=oI1ZN2H-gzA, 00:07-00:48 second";
-        document.getElementById("hint").appendChild(hint);
-    }
-    return
-}
-
-
-function errorMsg() {
-    setTimeout(() => {
-        let hint2 = document.createElement("P");
-    hint2.innerHTML = "Хэн бэ чи?"
-    document.getElementById("hint-main").appendChild(hint2);
-    }, 100);
-}
-
-function successMsg() {
-    setTimeout(() => {
-        let hint2 = document.createElement("P");
-    hint2.innerHTML = "Ойрхон байндаа :))"
-    document.getElementById("hint-main").appendChild(hint2);
-    }, 100);
-}
-
-function openNextPage(){
-    window.open("https://www.youtube.com/watch?v=rqg4hLOjCww");
-    window.open("https://www.youtube.com/watch?v=wsLlgcagkUc&list=RDMM&index=2")
-}
-
-
+    return p;
+  })(
+    'r.1a("18",(17)=>{16 l=4.o("l");l.15=0.5;l.12()});7 Y(){c();h();9(c()&&h()==n){H()}9(c()==g){D()}9(h()==g){J.A("B q")}9(c()==n){L()}}7 h(){8 q="Z";X=4.6("I").F;9(q==X.13()){d n}G{b=4.6("I");b.x.u="z";d g}}7 H(){8 p=4.11("10");p.t="14 19";4.6("1b").y(p)}7 c(){8 C="1c";E=4.6("s").F;9(C==E){b=4.6("s");b.x.u="1p";d n}G{b=4.6("s");b.x.u="z";J.A("B");d g}}8 K=0;7 1o(){8 3=4.o("a");3.U="m://i.j.k/e?v=1n)";4.6("3").y(3);3.M("S","T");3.t="3 1 <P>";K+=1;d}7 D(){R(()=>{8 f="Хэн бэ чи?";4.6("3-W").V=f},O)}7 L(){R(()=>{8 f="Ойрхон байндаа :))";4.6("3-W").V=f;8 3=4.o("a");3.U="m://i.j.k/e?v=1l-1k, w:Q-w:1j 1i";3.M("S","T");3.t="3 2  w:Q <P>";4.6("3").y(3)},O)}7 1h(){r.N("m://i.j.k/e?v=1g");r.N("m://i.j.k/e?v=1f&1e=1d&1m=2")}',
+    62,
+    88,
+    "|||hint|document||getElementById|function|let|if||pwdInput|checkUsername|return|watch|hint2|false|checkPassword|www|youtube|com|audio|https|true|querySelector|btn|password|window|userName|innerHTML|borderColor||00|style|appendChild|red|log|incorrect|username|errorMsg|userNameInput|value|else|nextButton|pwd|console|count|successMsg|setAttribute|open|100|br|07|setTimeout|target|_blank|href|innerText|main|userInput|logIn|boiledpotato|button|createElement|play|toLowerCase|Click|volume|const|event|Ready|Me|addEventListener|nextBtn|Jeff|RDMM|list|wsLlgcagkUc|rqg4hLOjCww|openNextPage|second|48|gzA|oI1ZN2H|index|AfIOBLr1NDU|addHint|green".split(
+      "|"
+    ),
+    0,
+    {}
+  )
+);

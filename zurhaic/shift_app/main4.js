@@ -8,6 +8,7 @@ let answerBtn = document.getElementById('answer');
 let plusBtn = document.getElementById('plusScore');
 let minusBtn = document.getElementById('minusScore');
 let sumScore = document.querySelector('#score');
+let history = document.querySelector('.history');
 let num;
 let array;
 let slides;
@@ -35,38 +36,44 @@ function genArray() {
 
     // tasks and answers setup
     let task1 = 'array.pop();';
+    let state1 = `Last state ${[...array]}`;
     array.pop();
     let answer1 = `Answer:\n[${array}];`;
 
     let task2 = "array.shift()";
+    let state2 = `Last state ${[...array]}`;
     array.shift();
     let answer2 = `Answer:\n[${array}];`;
     
-    let task3 = 'array.filter(el => el % 2 !== 0).toLeftSide();';
-    let evenAnswer = array.filter(el => el % 2 !== 0);
-    let answer3 = `Answer:\n[${evenAnswer}];`;
+    let task3 = 'array = array.filter(el => el > 2)';
+    let state3 = `Last state ${[...array]}`;
+    array = array.filter(el => el > 2);
+    let answer3 = `Answer:\n[${array}];`;
     
-    let task4 = 'array.map(el => el % 2 === 0).toSitdown();';
+    let task4 = 'array = array.map(el => el % 2 === 0).sitDown();';
+    let state4 = `Last state ${[...array]}`;
     let newFiltered = array.map(element => element % 2 === 0 ? 'sit' : element);
     let answer4 = `Answer:\n[${newFiltered}];`;
     
     let task5 = 'array.slice(' + parseInt(array.length / 2) + ')';
-    let taskRest = array.slice(parseInt(array.length / 2));
-    let answer5 = `Answer:\n[${taskRest}];`;
+    let state5 = `Last state ${[...array]}`;
+    array = array.slice(parseInt(array.length / 2));
+    let answer5 = `Answer:\n[${array}];`;
     
-    let task6 = 'array.reverse("students")';
+    let task6 = 'array.reverse()';
+    let state6 = `Last state ${[...array]}`;
     array.reverse();
     let answer6 = `Answer:\n[${array}];`;
 
     
         
     slides = [
-        { task: task1, answer: answer1 },
-        { task: task2, answer: answer2 },
-        { task: task3, answer: answer3 },
-        { task: task4, answer: answer4 },
-        { task: task5, answer: answer5 },
-        { task: task6, answer: answer6 },
+        { task: task1, answer: answer1, state: state1 },
+        { task: task2, answer: answer2, state: state2 },
+        { task: task3, answer: answer3, state: state3 },
+        { task: task4, answer: answer4, state: state4 },
+        { task: task5, answer: answer5, state: state5 },
+        { task: task6, answer: answer6, state: state6 },
     ];
 };
 
@@ -85,17 +92,19 @@ function minusScore() {
 
 nextBtn.addEventListener('click', goNext);
 function goNext() {
+nextBtn.style.display = 'none';
 
-    if (indexSlide == slides.length) {
-        screenText.innerText = 'Thank you!';
-        stopTimer();
-    } else {
-        screenText.innerText = slides[indexSlide].task;
-        nextBtn.style.display = 'none';
-        answerBtn.style.display = 'block';
-        plusBtn.disabled = true;
-        minusBtn.disabled = true;
-    }
+  if (indexSlide == slides.length) {
+      screenText.innerText = 'Thank you!';
+      stopTimer();
+      history.innerText = '';
+  } else {
+      screenText.innerText = slides[indexSlide].task;
+      answerBtn.style.display = 'block';
+      plusBtn.disabled = true;
+      minusBtn.disabled = true;
+      history.innerText = slides[indexSlide].state;
+  }
 }
 
 answerBtn.addEventListener('click', answerMe);

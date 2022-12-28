@@ -98,6 +98,10 @@ button:hover {
   height: 30px;
   border-radius: 7px;
   color: white;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 3px;
   border: 1px solid white;
   background-color: black;
   display: none;
