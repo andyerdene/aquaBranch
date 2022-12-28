@@ -11,18 +11,18 @@ main {
 
   width: 40%;
   border-radius: 80px;
-  background-color: rgba(255, 255, 255, 0.461);
+  background-color: rgba(49, 214, 34, 0.293);
   padding: 50px;
   box-sizing: border-box;
 }
 
 .tip {
   width: 60%;
-  background-color: rgb(49, 214, 34);
+  background-color: rgba(209, 209, 209, 0.812);
   padding: 50px 30px;
   margin: 0px auto;
   border-radius: 30px;
-  border: 1px ridge rgb(3, 67, 10);
+  /* border: 1px ridge rgb(3, 67, 10); */
   box-shadow: 1px 1px 10px greenyellow;
 }
 
@@ -35,6 +35,10 @@ main {
   width: 60%;
   margin: 40px auto;
   text-align: center;
+}
+::placeholder {
+  color: white;
+  /* opacity: 1; */
 }
 
 .password {

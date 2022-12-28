@@ -1,0 +1,130 @@
+body {
+    height: 95vh;
+}
+
+#mid-door {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    background: linear-gradient(to right, rgb(7, 61, 7), black); 
+    border-radius: 20px;
+    border:2px solid black;
+    margin-top: 150px;
+    color: #f8f9fa;
+    position: relative;
+}
+
+#pass {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.result2 {
+    position: absolute;
+    top: 0;
+    height: 59px;
+    margin-top: 100px;
+    padding: 0;
+}
+.result1 {
+    position: absolute;
+    top: 0;
+    height: 59px;
+    margin-top: 100px;
+    padding: 0;
+    color: #f8f9fa;
+    display: none;
+}
+.result3 {
+    position: absolute;
+    top: 0;
+    height: 59px;
+    margin-top: 100px;
+    padding: 0;
+    color: #f8f9fa;
+    display: none;
+}
+.result4 {
+    position: absolute;
+    top: 0;
+    height: 59px;
+    margin-top: 100px;
+    padding: 0;
+    color: #f8f9fa;
+    display: none;
+}
+
+p {
+    color: #6c757d;
+}
+
+#snow {
+    top: 0;
+    position: absolute;
+    margin-top: 15px;
+}
+
+#bsnow {
+    bottom: 0;
+    position: absolute;
+}
+
+.p-2 {
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: rgb(5, 73, 5, .5);
+    border-radius: 20px;    
+    border: 1px solid black;
+    box-shadow:1px 1px 1px 1px black ;
+    margin-left: 20px;
+}
+
+#psword {
+    height: 50px;
+    border: 0;
+    border-radius: 20px;
+}
+
+.prev {
+    height: 70px;
+    width: 100px;
+    background: linear-gradient(to right, rgb(26, 119, 26), rgb(25, 61, 10)); 
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.prev:hover {
+    opacity: 0.5;
+}
+
+.prev:active {
+    background-color: rgb(8, 60, 8);
+}
+
+button {
+    margin-top: 20px;
+}
+
+.p-2:hover {
+    background-color: rgb(5, 73, 5, .3);
+}
+
+.p-2:active {
+    background-color: rgb(5, 73, 5, .1);
+}
+
+.air {
+    width: 400px;
+    height: 500px;
+}
+
+@media screen and (max-width: 376px){
+    #string {
+        color: black;
+    }
+}

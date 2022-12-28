@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Shift Game</title>
+  </head>
+  <body class="bg-light">
+    <div class="container-md text-center my-3">
+      <div class="header bg-info p-2 shadow rounded">
+        <p class="fs-1"><strong>.shift() game</strong></p>
+        <span class="fs-4 text-dark"><strong>Aquanauts Team {diving.into.coding} Pinecone Academy</strong></span>
+      </div>
+      <div class="main my-3">
+        <div class="card text-center shadow">
+          <h5 class="card-header p-2 bg-primary fs-3 text-white">React to the expression:</h5>
+          <div class="card-body d-flex align-items-center justify-content-center">
+            <code>
+              <span id = "screen" class="card-text text-dark">Welcome!</span>
+            </code>
+          </div>
+          <div class="card-footer bg-primary d-flex align-items-center justify-content-center">
+            <button id = "minusScore" class="btn btn-info mx-2">-</button>
+            <input id = "score" class="mx-2" placeholder="0" disabled></input>
+            <button id = "plusScore" class="btn btn-info mx-2">+</button>
+            <button id = "next" class="btn btn-info mx-2">Next</button>
+            <button id = "answer" class="btn btn-info mx-2">Answer</button>
+            <button id = "generate" class="btn btn-info mx-2">Generate</button>
+          </div>
+        </div>
+        <div class="statusBar mt-3 d-flex flex-wrap justify-content-center justify-content-center-md">
+          <div class="d-flex flex-wrap mt-3 me-md-3 justify-content-center">
+            <div class="p-2">Participants</div>
+            <input id="input" class="input p-2" type="number"/>
+          </div>
+          <div class=" d-flex flex-wrap justify-content-center align-content-center">
+            <div id="clock" class="clock mt-3 p-2 mx-sm-2 text-center rounded fw-bold shadow"></div>
+            <div class="clockButtons mt-3 d-flex flex-wrap justify-content-center">
+              <button id="start" class="btn btn-success mx-1 shadow">
+                Start
+              </button>
+              <button id ="stop" class="btn btn-danger mx-1 shadow">
+                Stop
+              </button>
+              <button id="reset" class="btn btn-warning mx-1 shadow">
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+      
+      <div class="footer bg-info rounded p-2 mt-4 shadow">
+        All rights reserved 2022
+      </div>
+    </div>
+
+    <!-- JavaScript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main3.js"></script>
+    <script src="./timer.js"></script>
+  </body>
+</html>
